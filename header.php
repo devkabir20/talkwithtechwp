@@ -8,10 +8,12 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Title of the document</title>
+<?php wp_head();?>
 </head>
 
-<body>
-    <header></header>
+<body <?php body_class(); ?>>
+    <?php 
+   include(locate_template('layouts/top-bar.php'));
+    ?>
 
 
